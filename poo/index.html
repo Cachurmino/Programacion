@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POO</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand mb-0 h1" href="#">POO</a>
+      </div>
+    </nav>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>Forma 1</h4>
+          <div class="mb-3">
+            <label class="form-label">Kilometraje</label>
+            <input
+              id="inp_km"
+              class="form-control"
+              type="text"
+              placeholder="Ingresar Kilometraje"
+            />
+          </div>
+          <button id="btn_mostrar" class="btn btn-outline-primary">
+            ENTER
+          </button>
+        </div>
+
+        <div class="col-lg-4">
+          <h4>Forma 2</h4>
+          <div class="mb-3">
+            <label class="form-label">Marca</label>
+            <select class="form-select" id="slt_marca">
+              <option value="-1" disabled selected>Seleccionar Marca</option>
+              <option value="Ford">Ford</option>
+              <option value="Peugeot">Peugeot</option>
+              <option value="Chevrolet">Chevrolet</option>
+            </select>
+          </div>
+          <button id="btn_aceptar" class="btn btn-outline-success">
+            ACEPTAR
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
