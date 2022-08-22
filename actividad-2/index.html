@@ -4,51 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Actividad 1</title>
+    <title>Actividad 2</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand mb-0 h1" href="#">Datos Personales</a>
+        <a class="navbar-brand mb-0 h1" href="#">Hipotenusa</a>
       </div>
     </nav>
     <div class="container mt-3">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-6">
           <div class="mb-3">
-            <label class="form-label">Nombre</label>
+            <label class="form-label">Cateto Opuesto</label>
             <input
               class="form-control"
-              type="text"
-              placeholder="Nombre"
-              id="inp_nombre"
+              type="number"
+              placeholder="Cateto Opuesto"
+              id="inp_opuesto"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Cateto Adyacente</label>
+            <input
+              class="form-control"
+              type="number"
+              placeholder="Cateto Adyacente"
+              id="inp_adyacente"
             />
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-6">
           <div class="mb-3">
-            <label class="form-label">Apellido</label>
-            <input
-              class="form-control"
-              type="text"
-              placeholder="Apellido"
-              id="inp_apellido"
-            />
+            <label class="form-label">Hipotenusa</label>
+            <h4 id="h4_hipotenusa">Resultado:</h4>
           </div>
-          <button class="btn btn-outline-success" id="btn_aceptar">
-            ACEPTAR
-          </button>
-        </div>
-        <div class="col-lg-4">
           <div class="mb-3">
-            <label class="form-label">DNI</label>
-            <input
-              class="form-control"
-              type="text"
-              placeholder="DNI"
-              id="inp_dni"
-            />
+            <button class="btn btn-outline-success" id="btn_ingresar">
+              Ingresar
+            </button>
           </div>
         </div>
       </div>
