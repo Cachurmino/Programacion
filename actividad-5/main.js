@@ -1,3 +1,18 @@
+//ACTIVIDAD 1
+import Casa from "./casa.js";
+
+const obtener_casa = async () => {
+  const casas = await fetch(
+    `https://www.dolarsi.com/api/api.php?type=valoresprincipales`
+  );
+  const lista_casas = await casas.json();
+
+  let casa = new Casa(lista_casas);
+  casa.mostrar_tabla();
+};
+
+obtener_casa();
+
 //ACTIVIDAD 2
 //Ejercicio A
 let criptos = [
